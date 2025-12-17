@@ -30,16 +30,15 @@ namespace JsonParser
             }
         }
 
-        public bool IsValidJson()
+        public void IsValidJson()
         {
             if (!HasGoodBrackets())
             {
-                return false;
+                Console.WriteLine("Object does not open and close with curly braces.");
             }
             else
             {
                 // Placeholder for further JSON validation logic
-                return true;
             }
         }
     }

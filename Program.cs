@@ -5,12 +5,19 @@ class Program
     static void Main(string[] args)
     {
         Parser parserInvalid = new Parser(@"C:\Users\srish\Downloads\tests\step1\invalid.json");
-        Console.WriteLine("Invalid JSON Test: " + parserInvalid.IsValidJson());
+        Console.Write("Invalid JSON Test: ");
+        parserInvalid.IsValidJson();
+
+        Console.WriteLine();
 
         Parser parserValid = new Parser(@"C:\Users\srish\Downloads\tests\step1\valid.json");
-        Console.WriteLine("Valid JSON Test: " + parserValid.IsValidJson());
+        Console.Write("Valid JSON Test: ");
+        parserValid.IsValidJson();
+
+        System.Console.WriteLine();
 
         Parser parserMultiLine = new Parser(@"C:\Users\srish\Downloads\tests\step1\validMultiline.json");
-        Console.WriteLine("Valid Multiline JSON Test: " + parserMultiLine.IsValidJson());
+        Console.Write("Valid Multiline JSON Test: ");
+        parserMultiLine.IsValidJson();
     }
 }
