@@ -34,7 +34,7 @@ namespace JsonParser
         {
             if (!HasGoodBrackets())
             {
-                Console.WriteLine("Object does not open and close with curly braces.");
+                Console.Write("Object does not open and close with curly braces.");
             }
             else
             {
