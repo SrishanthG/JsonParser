@@ -22,7 +22,7 @@ class Program
 
         Console.WriteLine();
 
-        Parser valid2 = new Parser(@"C:\Users\srish\Downloads\tests\step2\valid2.json");
+        Parser valid2 = new Parser(@"C:\Users\srish\Downloads\tests\step2\student_record.json");
         Console.Write("Valid JSON Test 2: ");
         valid2.IsValidJson();
     }
