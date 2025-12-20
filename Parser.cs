@@ -46,7 +46,7 @@ namespace JsonParser
 
             for (int i=0; i<pairs.Length; i++)
             {
-                string[] pair = pairs[i].Trim().Split(":");
+                string[] pair = pairs[i].Trim().Split(":", StringSplitOptions.RemoveEmptyEntries);
 
                 if (pair.Length != 2)
                 {
